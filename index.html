@@ -4,18 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css"/>
+    <link href="./components/styleComponents.css" rel="stylesheet" />
     <title>Tradify</title>
 </head>
 <body >
     <div class="front-page">
-        <div class="header">
-            <img src="./images/Logo.png" />
-            <div>
-                <p>FAQ's</p>
-                <p>About Us</p>
-            </div>
-            
-        </div>
+        <my-header></my-header>
         <div class="container">
             <div class="image">
                 <img class="desktop-img" src="./images/desktop.png"/>
@@ -33,11 +27,8 @@
                 </div>
             </div>
         </div>
-        <ul class="footer">
-            <li>Copiright©Tradify</li>
-            <li class="footer-text">FAQ's</li>
-            <li class="footer-text">About Us</li>
-        </ul>
+        <my-footer></my-footer>
     </div>
+    <script type="module" src="./components/customComponents.js"></script>
 </body>
 </html>
