@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../components/styleComponents.css"/>
+    <link rel="stylesheet" href="../components/headerFooter.css"/>
     <link href="./styleSignup.css" rel="stylesheet" />
     
     <title>tradify</title>
 </head>
 
 <body class="">
-    <my-header></my-header>
-    
+    <div id="header"></div>
     <div class="signup-page">
         <div class="image">
             <img src="../images/signup.png"/>
@@ -26,8 +25,10 @@
                 <div class="get-started">
                     <h2>Get Started Free</h2>
                 </div>
-                <div class="home-icon">
-                    <img  src="https://img.icons8.com/?size=64&id=jqVLTIkbz7hy&format=png" alt="home icon"/>
+                <div  class="home-icon">
+                    <a href="../index.html">
+                        <img  src="https://img.icons8.com/?size=64&id=jqVLTIkbz7hy&format=png" alt="home icon"/>
+                    </a>
                 </div>
                 <h1 class="create-account">Create an account</h1>
                 <form class="signup-form">
@@ -52,8 +53,13 @@
             </div>
         </div>
     </div>
-    <my-footer></my-footer>
-    <script type="module" src="../components/customComponents.js"></script>
+    <div id="footer"></div>
+    <script type="module">
+        import Header from "../components/Header.js"
+        import Footer from "../components/footer.js"
+        document.getElementById("header").innerHTML = Header("../images/logo.png");
+        document.getElementById("footer").innerHTML = Footer()
+    </script>
 </body>
 
 </html>

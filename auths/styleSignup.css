@@ -6,7 +6,7 @@
   display: flex;
   color: white;
   background: #1b202b;
-  min-height: 90vh;
+  min-height: 91vh;
   padding-top: 40px;
 }
 .image {
@@ -37,7 +37,7 @@
   display: flex;
   justify-content: center;
 }
-.home-icon > img {
+.home-icon > a > img {
   background: gray;
   width: 60px;
   border-radius: 5%;

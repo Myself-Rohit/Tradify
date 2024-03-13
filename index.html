@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css"/>
-    <link href="./components/styleComponents.css" rel="stylesheet" />
+    <link href="./components/headerFooter.css" rel="stylesheet" />
     <title>Tradify</title>
 </head>
 <body >
     <div class="front-page">
-        <my-header></my-header>
+        <div id="header"></div>
         <div class="container">
             <div class="image">
                 <img class="desktop-img" src="./images/desktop.png"/>
@@ -27,8 +27,13 @@
                 </div>
             </div>
         </div>
-        <my-footer></my-footer>
+       <div id="footer"></div>
     </div>
-    <script type="module" src="./components/customComponents.js"></script>
+    <script type="module">
+        import Header from "./components/Header.js"
+        import Footer from "./components/footer.js"
+        document.getElementById("header").innerHTML= Header("./images/logo.png");
+        document.getElementById("footer").innerHTML = Footer()
+    </script>
 </body>
 </html>
