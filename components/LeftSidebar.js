@@ -1,9 +1,9 @@
 
 const LeftSidebar = () => {
-    
+   
     return `<div class="sidebar">
         <img class="sidebar-logo" src="../images/logo.png"/>
-        <button class="arrow">
+        <button class="arrow" onclick="toggleSidebar()">
             <img src="https://cdn-icons-png.flaticon.com/128/11215/11215853.png"/></button>
         <ul class="sidebar-list">
             <li class="list-item">
@@ -36,6 +36,6 @@ const LeftSidebar = () => {
                 <span>Logout</span>
             </li>
         </ul>
-            </div>`
+    </div>`
 }
 export default LeftSidebar;

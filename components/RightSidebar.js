@@ -2,7 +2,10 @@
 const RightSidebar = () => {
     
     return `<div class="right-sidebar">
-        <img class="sidebar-logo" src="../images/logo.png"/>
+    <div class="profile">
+        <img src="https://cdn-icons-png.flaticon.com/128/3665/3665997.png"/>
+        <span>name</span>
+        </div>
         <button class="right-arrow">
             <img src="https://cdn-icons-png.flaticon.com/128/11215/11215853.png"/>
         </button>

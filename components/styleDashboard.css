@@ -59,16 +59,21 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 10px 10px 0 0;
+  background: black;
+}
+.card > img:hover {
+  opacity: 50%;
 }
 .description {
   margin-top: -4px;
   background: black;
-  color: white;
+  color: #b3b3b3;
   padding: 10px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 0 0 10px 10px;
+  z-index: 2;
 }
 .description > span {
   flex-grow: 1;

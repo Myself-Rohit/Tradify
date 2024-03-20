@@ -80,6 +80,8 @@
 }
 
 .submit-btn {
+  display: block;
+  box-sizing: border-box;
   background: #3a6ffb;
   color: white;
   padding: 10px;
@@ -88,6 +90,8 @@
   margin-top: 20px;
   border-radius: 5px;
   font-size: 16px;
+  text-align: center;
+  text-decoration: none;
   /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0006); */
   /* box-shadow: 0 0 5px #3a6ffb, 0 0 15px #3a6ffb, 0 0 25px #3a6ffb,
     0 0 100px #3a6ffb; */

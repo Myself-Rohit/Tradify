@@ -1,5 +1,9 @@
 import LeftSidebar from "./LeftSidebar.js"
 import RightSidebar from "./RightSidebar.js"
+
+import Footer from "./Footer.js"
+document.getElementById("footer").innerHTML = Footer()
+
 document.getElementById("left-sidebar").innerHTML = LeftSidebar()
 document.getElementById("right-sidebar").innerHTML = RightSidebar()
 
@@ -44,30 +48,32 @@ document.getElementById("right-sidebar").innerHTML = RightSidebar()
 const card = logos.map((info) => {
     return `<div class="card"><img src=${info.image} key=${info.id} />
     <span class="gap"></span>
-    <p class="description">${info.name}<span class="gap"></span>Rs. ${Math.floor(Math.random() * 800) + 100}</p>
+    <p class="description">${info.name}<span class="gap"></span>Rs. ${((Math.random() * 600) + 100).toFixed(2)}</p>
     </div>`
 })
+
 document.querySelector(".main").innerHTML += card
 const updatePrice = () => {
-    document.querySelector(".main").innerHTML =""
+    document.querySelector(".main").innerHTML = ""
     const card = logos.map((info) => {
     return `<div class="card"><img src=${info.image} />
     <span class="gap"></span>
-    <p class="description">${info.name}<span class="gap"></span>Rs. ${Math.floor(Math.random() * 1000) + 100}</p>
+    <p class="description">${info.name}<span class="gap"></span>Rs. ${info.price}</p>
     </div>`
 })
 document.querySelector(".main").innerHTML += card
     logos.map((item) => {
-        const newPrice = Math.floor(Math.random())
-        
-    console.log(item.price)
-      return  item.price = newPrice;
+        const newPrice = (Math.floor(Math.random() * 1000) + 100)
+        return  item.price = newPrice;
     });
 }
 
 setInterval(() => {
     updatePrice()
-    return ()=>updatePrice()
+    return clearInterval(()=>updatePrice())
 }, 120000)
 
-
+function toggleSidebar() {
+    console.log("btn")
+}
+toggleSidebar()
