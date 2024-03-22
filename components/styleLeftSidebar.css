@@ -26,8 +26,12 @@
 
 .arrow {
   margin: 20px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 .arrow > img {
+  background:none;
   width: 20px;
 }
 .sidebar-list {
@@ -35,7 +39,7 @@
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
-  color: white;
+  color: #b3aaaa;
 }
 .list-item {
   display: grid;
@@ -107,6 +111,9 @@
 }
 .right-arrow {
   margin: 20px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 .right-arrow > img {
   width: 20px;
