@@ -29,6 +29,9 @@ body {
 .search-div > img {
   width: 28px;
 }
+.search-div > img{
+  cursor: pointer;
+}
 .search {
   background: #1b202b;
   width: 400px;

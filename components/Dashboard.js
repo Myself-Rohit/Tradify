@@ -48,7 +48,7 @@ document.getElementById("right-sidebar").innerHTML = RightSidebar()
 const card = logos.map((info) => {
     return `<div class="card"><img src=${info.image} key=${info.id} />
     <span class="gap"></span>
-    <p class="description">${info.name}<span class="gap"></span>Rs. ${info.price}</p>
+    <p class="description">${info.name}<span class="gap"></span>Rs. ${((Math.random() * 1000) + 100).toFixed(2)}</p>
     </div>`
 })
 
@@ -58,7 +58,7 @@ const updatePrice = () => {
     const card = logos.map((info) => {
     return `<div class="card"><img src=${info.image} />
     <span class="gap"></span>
-    <p class="description">${info.name}<span class="gap"></span>Rs. ${info.price}</p>
+    <p class="description">${info.name}<span class="gap"></span>Rs. ${((Math.random() * 1000) + 100).toFixed(2)}</p>
     </div>`
 })
 document.querySelector(".main").innerHTML += card
@@ -67,13 +67,6 @@ document.querySelector(".main").innerHTML += card
         return item.price = newPrice;
     });
 }
-
-let timer = setInterval(() => {
+setInterval(() => {
     updatePrice()
 }, 120000)
-timer()
-clearInterval(timer)
-function toggleSidebar() {
-    console.log("btn")
-}
-toggleSidebar()
