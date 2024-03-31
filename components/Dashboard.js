@@ -1,7 +1,7 @@
 import LeftSidebar from "./LeftSidebar.js"
 import RightSidebar from "./RightSidebar.js"
 
-import Footer from "./Footer.js"
+import Footer from "./footer.js"
 document.getElementById("footer").innerHTML = Footer()
 
 document.getElementById("left-sidebar").innerHTML = LeftSidebar()

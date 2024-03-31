@@ -1,5 +1,5 @@
 
-const LeftSidebar = () => {
+function LeftSidebar() {
    
     return `<div class="sidebar">
         <img class="sidebar-logo" src="../images/logo.png"/>

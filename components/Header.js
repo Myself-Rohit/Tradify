@@ -1,5 +1,5 @@
 
-const Header = ( logo ) => {
+function Header ( logo ) {
   return( `<div class="header">
             <img src=${logo} />
             <div>

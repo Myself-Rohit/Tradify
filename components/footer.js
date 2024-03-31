@@ -1,5 +1,5 @@
 
-const Footer = () => {
+function Footer () {
   return  `<div class="footer">
             <ul>
                 <li>Copyright © Tradify</li>
